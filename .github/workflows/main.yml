@@ -14,7 +14,7 @@ jobs:
 
     - name: Copy code to EC2
       uses: appleboy/scp-action@v1
-        with:
+      with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           password: ${{ secrets.SSH_KEY }}
